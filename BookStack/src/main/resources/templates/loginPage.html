@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Stack</title>
+<link rel="stylesheet" href="Style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+
+<article class="login" >
+
+<form action="/signUp" method="get" id="go">
+<input type="submit" value="Sign up" id="sbmt" class="form"> 
+</form>
+
+<form action="books" method="post" >
+<b style="color:red" th:text=" ${pattern}"></b> <br> <br>
+<input type="text" name="id" placeholder="ID" class="form" required="required" maxlength="11" minlength="11" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+ <br> <br>
+   <input type="password" name="password" placeholder="Password" class="form" required="required">
+   <br><br>
+  <input type="submit" value="Log in" id="sbmt" class="form">  
+</form>
+
+
+
+
+</article>
+
+
+</body>
+</html>

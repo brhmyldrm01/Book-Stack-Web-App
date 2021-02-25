@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Stack</title>
+        <meta charset="ISO-8859-1">
+        <link rel="stylesheet" href="personSt.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <div id="hi">
+            <h2 th:text="'Welcome '+${userName}+' '+${surname} " > </h2>
+        </div>
+        <div id="books">
+            <b th:text=" ${books}"></b>
+             <b style="color:blue" th:text=" ${pattern}"></b>
+        </div>
+        <div id="crud" >
+     
+         
+             <form action="/add"  method="get" style="margin-left:280px; ">   <input type="submit" value="ADD" id="add" class="sbmt"> </form>   
+            <form action="/updt"  method="get" style="margin-left:280px;">   <input type="submit" value="UPDATE" id="updt" class="sbmt"> </form>
+            <form action="/del"  method="get" style="margin-left:280px ;">    <input type="submit" value="DELETE" id="dlt" class="sbmt"></form>
+           
+        </div>
+
+
+
+
+
+       
+                    
+
+    </body>
+</html>

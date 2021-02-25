@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Stack</title>
+<link rel="stylesheet"  type="text/css" href="crudS.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div id="books">
+<b th:text=" ${books}"></b>
+    </div>
+
+        <div id="crud">
+            <form method="Post" action="/Radd">  
+            	<b style="color:blue" th:text=" ${pattern}"></b> <br> <br>
+             <input type="text" name="name" placeholder="Name" class="form"  required="required"><b style="color: red;">*</b>
+             <br><br>
+            <input type="text" name="author" placeholder="Author" class="form" required="required"> <b style="color: red;">*</b>
+             <br><br>
+             <input type="number"  name="page" placeholder="Page" class="form" min="1"  max="2000"required="required"><b style="color: red;">*</b>
+             <br><br>
+                <input type="submit" value="ADD" name="add" id="sbmt">
+            </form></div>
+    </body>
+</html>
